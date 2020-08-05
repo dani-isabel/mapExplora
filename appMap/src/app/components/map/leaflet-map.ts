@@ -13,7 +13,7 @@ export class LeafletMap {
     map: Leaflet.Map;
     constructor(id: string){
         this.map = Leaflet.map(id);
-        Leaflet.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
+        Leaflet.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png')
         .addTo(this.map);
         this.addMarker();
         
@@ -22,6 +22,7 @@ export class LeafletMap {
     addMarker() {
         const marker = Leaflet.marker([medellin.coords.lat,medellin.coords.lng],{icon: icon});
         marker.addTo(this.map);
+        marker.bindPopup("hola").openPopup();
     }
 }
 
