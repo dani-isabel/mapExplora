@@ -1,27 +1,14 @@
-# AppMap
+### Medellin map
+* Angular-based project map application by [dani-isabel](https://github.com/dani-isabel)
+* This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.3.
+# Run the application
+1. [Clone or download](https://github.com/dani-isabel/mapExplora.git) the source code of the application to your computer.
+2. Install Node.js if not installed [from Download page](https://nodejs.org/en/download/) or [via package manager](https://nodejs.org/en/download/package-manager/).
+3. Run `npm install -g @angular/cli` to install [Angular CLI](https://cli.angular.io/) globally. Note, `sudo` may require for this operation.
+4. Go to the application directory.
+5. Run `npm install` to get all dependencies.
+6. Run `ng serve` for a dev server. 
+7. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+**The page contains only one phrase "The map will be displayed here", that we replace now with a map.**
