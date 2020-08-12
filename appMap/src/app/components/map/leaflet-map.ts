@@ -7,7 +7,7 @@ const keyPoints = {
     coords2: new Leaflet.LatLng(6.270833, -75.564167),
     coords3: new Leaflet.LatLng(6.26706, -75.56941),
     coords4: new Leaflet.LatLng(6.26219, -75.576968),
-    coords5: new Leaflet.LatLng(6.236667, -75.580278),
+    coords5: new Leaflet.LatLng(6.266667, -75.583333),
 }
 const icon = new Leaflet.Icon({
     iconUrl: 'https://image.flaticon.com/icons/svg/1397/1397891.svg',
@@ -31,12 +31,12 @@ export class LeafletMap {
         const jardin = Leaflet.marker([keyPoints.coords2.lat,keyPoints.coords2.lng],{icon: icon});
         const udea = Leaflet.marker([keyPoints.coords3.lat,keyPoints.coords3.lng],{icon: icon});
         const unal = Leaflet.marker([keyPoints.coords4.lat,keyPoints.coords4.lng],{icon: icon});
-        const pueblito = Leaflet.marker([keyPoints.coords5.lat,keyPoints.coords5.lng],{icon: icon});
+        const cerro = Leaflet.marker([keyPoints.coords5.lat,keyPoints.coords5.lng],{icon: icon});
             explora.addTo(this.map).bindPopup("Parque Explora").openPopup();
             jardin.addTo(this.map).bindPopup("Jardín Botánico").openPopup();
             udea.addTo(this.map).bindPopup("Universidad de Antioquia").openPopup();
             unal.addTo(this.map).bindPopup("Universidad Nacional").openPopup();
-            pueblito.addTo(this.map).bindPopup("Universidad Nacional").openPopup();
+            cerro.addTo(this.map).bindPopup("Cerro el Volador").openPopup();
         }
     }
 
